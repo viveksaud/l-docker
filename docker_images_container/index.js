@@ -1,4 +1,11 @@
-console.log("namastey");
-console.log("env", process.env.NODE_ENV);
-console.log("env", process.env.DB_ENV);
+const express = require('express');
 
+const app=express();
+
+app.get('/', (req,res)=>{
+res.send("om namo narayan");
+})
+
+app.listen(4000, ()=>{
+    console.log("server is running on prot 4000");
+})
